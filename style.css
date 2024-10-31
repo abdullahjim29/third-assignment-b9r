@@ -1,0 +1,42 @@
+.portfolio-row-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+}
+
+.portfolio-row-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 12px;
+    gap: 12px;
+}
+
+
+/* responsive for small devices according to tailwind*/
+@media screen and (max-width: 767px) {
+
+    .portfolio-row-1{
+        grid-template-columns:1fr;
+    }
+
+    .portfolio-row-2{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* responsive for medium devices according to tailwind*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .portfolio-row-1{
+        grid-template-columns:1fr;
+    }
+    .portfolio-row-2{
+        grid-template-columns:1fr;
+    }
+
+    #portfolio-2, #portfolio-3, #portfolio-5{
+        width: 80%;
+    }
+
+}
